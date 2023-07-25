@@ -12,7 +12,7 @@ pivot_table = df.pivot_table(
 ) * 100
 
 app = dash.Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
-
+server = app.server
 filter_options = ['Организация', 'Группа подразделений', 'Группа должностей', 'Пол']
 
 app.layout = html.Div([
