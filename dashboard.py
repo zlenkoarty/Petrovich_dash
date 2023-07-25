@@ -5,7 +5,7 @@ import dash_table
 from dash.dependencies import Input, Output
 import pandas as pd
 
-df = pd.read_excel('текучесть.xlsx')
+df = pd.read_excel('turnover.xlsx')
 pivot_table = df.pivot_table(
     values=['Общая текучесть','Текучесть 3 месяца', 'Текучесть 6 месяца', 'Текучесть 12 месяца'],
     index=['Организация', 'Группа подразделений', 'Группа должностей', 'Пол'],
